@@ -198,7 +198,7 @@ template = """<!DOCTYPE html>
     <li>Кликни закладку — появится оверлей.</li>
     <li>Вкладка <strong>1. Set address</strong> → вставь список <code>act_ID</code> по строке → <strong>Run address</strong>.</li>
   </ol></div>
-  <p>Адрес захардкожен: <code>US / DE / Wilmington / 91105</code>. Чтобы поменять — правь <code>ADDRESS</code> в <code>set_address.js</code> и пересобирай.</p>
+  <p>Адрес захардкожен: <code>US / DE / Wilmington / 19801</code>. Чтобы поменять — правь <code>ADDRESS</code> в <code>set_address.js</code> и пересобирай.</p>
 
   <h3>2. Attach card</h3>
   <div class="steps"><ol>

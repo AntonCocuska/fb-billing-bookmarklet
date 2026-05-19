@@ -60,7 +60,7 @@ python build_bookmarklet.py set_address.js
 1. Открой Facebook (Ads Manager / business.facebook.com).
 2. Кликни закладку — появится оверлей по центру страницы.
 3. Перейди на вкладку **1. Set address**.
-4. Адрес захардкожен в исходнике: `US / DE / Wilmington / 91105`. Если нужны другие значения — правь `ADDRESS` в `set_address.js` и пересобирай через `build_bookmarklet.py`.
+4. Адрес захардкожен в исходнике: `US / DE / Wilmington / 19801`. Если нужны другие значения — правь `ADDRESS` в `set_address.js` и пересобирай через `build_bookmarklet.py`.
 5. В textarea — список `act_ID` по строкам (с префиксом `act_` или без):
    ```
    1133545425604191

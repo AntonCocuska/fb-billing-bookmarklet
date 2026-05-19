@@ -78,7 +78,7 @@
   // === Константы ============================================================
   var ADDRESS = {
     country_code: 'US', state: 'DE',
-    city: 'Wilmington', zip: '91105',
+    city: 'Wilmington', zip: '19801',
     street1: '', street2: ''
   };
   var DOC_UPDATE_ACCOUNT      = '33020210320959428';
@@ -163,7 +163,7 @@
 
     // Tab Address
     '    <div id="tab-addr" class="tab active">',
-    '      <div class="addr"><b>Адрес:</b><br>country=US, state=DE<br>city=Wilmington, zip=91105</div>',
+    '      <div class="addr"><b>Адрес:</b><br>country=US, state=DE<br>city=Wilmington, zip=19801</div>',
     '      <label>Account IDs (по строке, с act_ или без)</label>',
     '      <textarea id="addr-accs" placeholder="1133545425604191"></textarea>',
     '      <button id="addr-run" class="run">Run address</button>',
@@ -676,7 +676,7 @@
     setInput(inps.exp, mmyy); await sleep(100);
     setInput(inps.cvc, cvc);  await sleep(200);
 
-    // ZIP появляется не всегда. Если поле есть прямо сейчас или появится после CVC — заполним 91105.
+    // ZIP появляется не всегда. Если поле есть прямо сейчас или появится после CVC — заполним из ADDRESS.zip.
     var zipInp = inps.zip;
     if (!zipInp) {
       var zipStart = Date.now();
