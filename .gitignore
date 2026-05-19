@@ -15,3 +15,6 @@ Thumbs.db
 sniff_*.jsonl
 *.dump.txt
 diag_*.txt
+
+# Personal session notes
+SESSION_*.md
