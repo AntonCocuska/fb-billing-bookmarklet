@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local data — на случай если кто-то будет сниффать в этом репо
+sniff_*.jsonl
+*.dump.txt
+diag_*.txt
