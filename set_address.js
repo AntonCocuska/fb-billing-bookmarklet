@@ -81,6 +81,8 @@
     city: 'Wilmington', zip: '19801',
     street1: '', street2: ''
   };
+  var CURRENCY = 'USD';
+  var TIMEZONE = 'Europe/Kiev';
   var DOC_UPDATE_ACCOUNT      = '33020210320959428';
   var DOC_PAYMENT_METHODS_LIST = '26414517794887295';
   var DOC_MAKE_PRIMARY        = '24268156329457050';
@@ -163,7 +165,7 @@
 
     // Tab Address
     '    <div id="tab-addr" class="tab active">',
-    '      <div class="addr"><b>Адрес:</b><br>country=US, state=DE<br>city=Wilmington, zip=19801</div>',
+    '      <div class="addr"><b>Адрес:</b><br>country=US, state=DE<br>city=Wilmington, zip=19801<br>currency=USD, timezone=Europe/Kiev</div>',
     '      <label>Account IDs (по строке, с act_ или без)</label>',
     '      <textarea id="addr-accs" placeholder="1133545425604191"></textarea>',
     '      <button id="addr-run" class="run">Run address</button>',
@@ -227,7 +229,7 @@
     var variables = {
       input: {
         billable_account_payment_legacy_account_id: accId,
-        currency: null, device_country: null,
+        currency: CURRENCY, device_country: null,
         tax: {
           business_address: {
             city: ADDRESS.city, country_code: ADDRESS.country_code,
@@ -237,7 +239,7 @@
           business_name: '', is_personal_use: false,
           second_tax_id: '', tax_id: '', tax_registration_status: ''
         },
-        timezone: null,
+        timezone: TIMEZONE,
         upl_logging_data: {
           billing_notification_id: '', context: 'billingaccountinfo',
           entry_point: 'ads_manager', external_flow_id: 'bm_' + Date.now(),
